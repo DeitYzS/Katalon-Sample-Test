@@ -19,5 +19,13 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.closeBrowser()
+WebUI.navigateToUrl('http://35.172.85.37:9999/')
+
+WebUI.setText(findTestObject('Object Repository/Page_Lab 234/input_Password_score'), '51')
+
+WebUI.click(findTestObject('Object Repository/Page_Lab 234/button_Submit'))
+
+WebUI.click(findTestObject('Page_Lab 234/answer'))
+
+WebUI.verifyElementText(findTestObject('Page_Lab 234/answer'), 'D')
 
